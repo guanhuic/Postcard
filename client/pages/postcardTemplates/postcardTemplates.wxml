@@ -1,0 +1,14 @@
+<!--pages/postcardTemplates/postcardTemplates.wxml-->
+
+<view class="postcard-template-container" hidden='{{globalHidden}}'>  
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" current="{{current}}" bindchange="handleSwiper" style='height:{{responsiveHeight}}px'>
+      <block wx:for="{{templateUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image postcard-template" bindload='imageLoad'/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <image class='prev' bindtap='prevImage' src="https://22082075.taoxingtian.com/image/leftarrow.gif" hidden='{{prevHidden}}'></image>
+    <image class='next' bindtap='nextImage' src="https://22082075.taoxingtian.com/image/rightarrow.gif" hidden='{{nextHidden}}'></image>
+    <button class="step-button" type="primary" disabled="{{disabled}}" bindtap="handleConfirm">确定该模板，开始制作</button>
+</view>

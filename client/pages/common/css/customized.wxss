@@ -1,0 +1,14 @@
+/**
+ * @file shared css
+ * @author Chen Guanhui
+ */
+
+.step-button {
+  margin: 8px;
+}
+
+.postcard-template {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+} 

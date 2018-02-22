@@ -1,0 +1,26 @@
+/* pages/postcardDelivery/postcardDelivery.wxss */
+
+@import "../common/css/customized.wxss";
+
+.canvas {
+  top: 0;
+  position: absolute;
+}
+
+.buttonwrapper {
+  display: flex;
+}
+
+button {
+  flex: 1 1 100%;
+  font-size: 14px;
+  line-height: 3.3;
+}
+
+.button-space {
+  margin-right: 4px;
+}
+
+.step-button, .buttonwrapper {
+  height: 46px;
+}

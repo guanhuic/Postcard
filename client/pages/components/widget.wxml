@@ -1,0 +1,22 @@
+<!--pages/components/widget.wxml-->
+<image 
+  class="widget" 
+  src="{{widgetUrl}}" 
+  style="width:{{realWidth/widthRatio}}px; height:{{realHeight/heightRatio}}px; top:{{topIndex}}px; left:{{leftIndex}}px;border:2px dashed #FFA500;" 
+  bindload="widgetLoad"
+  catchtap="widgetToggle"
+  hidden='{{hideWidget}}'/>
+
+<view class="widget-swiper" style="left:{{open ? 0 : -defaultLeft}}px;">
+  <swiper indicator-dots="true" bindchange="handleSwiper" name="widgetswiper">
+    <block wx:for="{{widgetList}}">
+      <swiper-item class="widget-candidate-wrapper">
+        <view class="widget-candidate">
+          <image src="{{item}}" class="slide-image widget-candidate-image" bindload="candidateLoad" style="width:{{candidateWidth}}px;height:150px"/>
+        </view>        
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<button class="step-button widget-confirm" type="primary" bindtap="handWidgetConfirm" hidden='{{widgetConfirmButtonHidden}}'>确认选定该组件</button>

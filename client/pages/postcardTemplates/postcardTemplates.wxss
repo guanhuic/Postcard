@@ -1,0 +1,18 @@
+/* pages/postcardTemplates/postcardTemplates.wxss */
+
+@import "../common/css/customized.wxss";
+
+.next {
+  right: 0;  
+}
+
+.prev, .next{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top: 40%;
+}
+
+.prev {
+  left: 0;
+}

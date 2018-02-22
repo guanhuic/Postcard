@@ -1,0 +1,19 @@
+/* pages/widgetWorkshop/widgetWorkshop.wxss */
+
+@import "../common/css/customized.wxss";
+
+.canvas-wrapper{ 
+  position: relative;
+}
+
+.canvas {
+  top: 0;
+  position: absolute;
+}
+
+.postcard-template {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+

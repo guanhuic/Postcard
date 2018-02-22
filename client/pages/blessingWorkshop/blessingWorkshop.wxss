@@ -1,0 +1,33 @@
+/* pages/blessingWorkshop/blessingWorkshop.wxss */
+
+@import "../common/css/customized.wxss";
+
+.canvas-wrapper{ 
+  position: relative;
+}
+
+.canvas {
+  top: 0;
+  position: absolute;
+}
+
+.postcard-template {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.change {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px
+}
+
+.blessingTxt {
+  overflow: hidden;
+}
+
+.picker-view {
+  z-index: 99;
+}

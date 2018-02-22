@@ -1,0 +1,10 @@
+{
+ "name": "postcard-server",
+ "version": "1.0.0",
+ "dependencies": {
+  "cookie-parser": "^1.4.3",
+  "express": "^4.16.2",
+  "multer": "^1.3.0",
+  "promise": "^8.0.1"
+ }
+}

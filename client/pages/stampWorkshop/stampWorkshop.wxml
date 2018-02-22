@@ -1,0 +1,10 @@
+<!--pages/stampWorkshop/stampWorkshop.wxml-->
+<view class="stamp-container" style="height:{{windowSize.height}}px">
+    <view class="photo-wrapper" style="top:{{responsiveHeight/2 - 150}}px;">
+      <canvas class="canvas" canvas-id="stampworkshop" style="width:{{stampWidth}}px;height:{{stampHeight}}px;margin-left:auto;margin-right:auto;border:1px dashed #FFA500"/>
+    </view>
+    <view class="button-wrapper">
+      <button bindtap="handleUpload" disabled='{{disableUpload}}'>上传照片</button>
+      <button type="primary" disabled="{{disableMake}}" bindtap="handleMake">制作并保存到相册（¥1）</button> 
+    </view>
+</view>

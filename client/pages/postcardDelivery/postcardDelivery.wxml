@@ -1,0 +1,15 @@
+<!--pages/postcardDelivery/postcardDelivery.wxml-->
+<view>
+  <view class="canvas-wrapper" style='height:{{responsiveHeight}}px'>
+    <image src="{{imageUrl}}" class="slide-image postcard-template" hidden='{{globalHidden}}'/>
+  </view>
+  <view class="step-button" hidden='{{globalHidden}}'>
+    <view class="buttonwrapper">
+      <button class="button-space" type="primary" bindtap="handleSave">保存</button>
+      <button class="button-space" type="primary" bindtap="handleMake">再做一张</button>
+      <button type="primary" bindtap="handleAbout">关于</button>
+    </view>
+  </view>
+
+  <canvas class="canvas" canvas-id="finalcanvas" style='width:{{realWidth}}px;height:{{realHeight}}px;left:{{-realWidth}}px' hidden='{{canvasHidden}}'/> 
+</view>

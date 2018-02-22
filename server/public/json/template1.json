@@ -1,0 +1,70 @@
+{
+  "widgets": [
+    {
+      "x": 629,
+      "y": 1557,
+      "files": [
+        "./image/template1/1_1.png",
+        "./image/template1/1_2.png"
+      ]
+    },
+    {
+      "x": 252,
+      "y": 1527,
+      "files": [
+        "./image/template1/2_1.png",
+        "./image/template1/2_2.png"
+      ]
+    },
+    {
+      "x": 558,
+      "y": 1313,
+      "files": [
+        "./image/template1/3_1.png",
+        "./image/template1/3_2.png"
+      ]
+    }
+  ],
+  "stamp": {
+    "file": "./image/template1/stamp_frame.png",
+    "x": 735,
+    "y": 115,
+    "photo": {
+      "x": 31,
+      "y": 30,
+      "length": 204
+    },
+    "price": {
+      "x": 955,
+      "y": 670
+    }
+  },
+  "blessing": {
+    "x": 502,
+    "y": 455,
+    "width": 430,
+    "height": 455,
+    "fontSize": 20
+  },
+  "user": {
+    "x": 733,
+    "y": 911,
+    "width": 200,
+    "height": 25
+  },
+  "date": {
+    "x": 692,
+    "y": 992,
+    "degree": 0,
+    "width": 20,
+    "height": 240,
+    "fontSize": 20
+  },
+  "location": {
+    "x": 50,
+    "y": 1027,
+    "degree": 90,
+    "width": 20,
+    "height": 120
+  }
+}

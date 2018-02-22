@@ -1,0 +1,40 @@
+<!--pages/blessingWorkshop/blessingWorkshop.wxml-->
+<view class="workshop">
+  <view class="canvas-wrapper" style='height:{{responsiveHeight}}px' hidden='{{globalHidden}}'>
+    <image src="{{imageUrl}}" class="slide-image postcard-template" bindload='imageLoad'/>
+    
+    <button class='change' size='mini' type='default' bindtap='doPop' style='position:relative;left:{{respX}}px;top:{{respY-30}}px;'>换字号</button>
+    <button class='change' size='mini' type='default' bindtap='btnTap1' style='position:relative;left:{{respX+10}}px;top:{{respY-30}}px;'>换祝福</button>
+    
+
+    <modal hidden="{{typeModalHidden}}" title="选择字体" confirm-text="确定" cancel-text="取消" bindcancel="typeCancel" bindconfirm="typeConfirm">
+    <picker-view indicator-style="height: 50px;" style="width:100%; height:150px" value="{{fontValue}}" bindchange="pickerChange">
+    <picker-view-column>
+      <view wx:for="{{fontSizeRange}}" style="line-height:50px;text-align:center">{{item}}</view>
+    </picker-view-column>
+    </picker-view>
+    <text style="display:flex;font-size:{{fontSizeTmp}}px;text-align:center;width:100%;height:100%;justify-content:center;">狗年大吉</text> 
+    </modal>
+
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <picker-view indicator-style="height: 50px;" style="width:100%; height:150px" value="0" bindchange="blessingPickerChange">
+    <picker-view-column>
+      <view wx:for="{{blessingRange}}" style="line-height:50px;text-align:center;font-size:15px">{{item}}</view>
+    </picker-view-column>
+    </picker-view>
+    <action-sheet-cancel>确定</action-sheet-cancel>
+    </action-sheet>
+    
+    <textarea class="blessingTxt" hidden='{{textareaHidden}}' placeholder="{{placeHolder}}" placeholder-style='font-size:{{fontSize}}px;' bindconfirm='doConfirm' text-align="center" bindblur='doBlur' cursor-spacing="15px" style="position:absolute;left:{{respX}}px;top:{{respY}}px;width:{{respWidth}}px;max-width:{{respWidth}}px;height:{{respHeight}}px;max-height:{{respHeight}}px;font-size:{{fontSize}}px;line-hight:1.5;resize:none" maxlength='{{maxLength}}' value='{{blessingContent}}'></textarea>
+    <input disabled='true' class="userTxt" hidden='{{textareaHidden}}' style="position:absolute;left:{{respUserX}}px;top:{{respUserY}}px;font-size:15px" value='{{userContent}}'></input>
+    
+    <!-- <modal hidden="{{sizeModalHidden}}" title="请选择字体大小" confirm-text="下一步" cancel-text="取消" bindcancel="sizeCancel" bindconfirm="sizeNext">
+    <slider min="0" max="4" bindchange="sliderChange" value="2"/>
+    <text style="display:flex;font-size:{{fontSize}}px;text-align:center;width:100%;height:100%;justify-content:center;">狗年大吉</text> 
+    </modal> -->
+    
+  </view>
+  <button class="step-button" size="default" type="primary" disabled="{{btnDisabled}}" bindtap="handleNextStep" hidden='{{globalHidden}}'>下一步</button>
+  <!-- 把canvas移出屏幕。。。防止canvas永远在最上层 -->
+    <canvas class="canvas" canvas-id="blessingcanvas" style='width:{{realWidth}}px;height:{{realHeight}}px;left:{{-realWidth}}px'/>
+</view>

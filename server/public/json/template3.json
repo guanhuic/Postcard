@@ -1,0 +1,57 @@
+{
+  "widgets": [
+    {
+      "x": 30,
+      "y": 25,
+      "files": [
+        "./image/template3/1_1.png",
+        "./image/template3/1_2.png",
+        "./image/template3/1_3.png",
+        "./image/template3/1_4.png",
+        "./image/template3/1_5.png"
+      ]
+    }
+  ],
+  "stamp": {
+    "file": "./image/template3/stamp_frame.png",
+    "x": 747,
+    "y": 11,
+    "photo": {
+      "x": 23,
+      "y": 19,
+      "length": 280
+    },
+    "price": {
+      "x": 955,
+      "y": 670
+    }
+  },
+  "blessing": {
+    "x": 446,
+    "y": 1020,
+    "width": 378,
+    "height": 332,
+    "fontSize": 15
+  },
+  "user": {
+    "x": 670,
+    "y": 1309,
+    "width": 150,
+    "height": 25
+  },
+  "date": {
+    "x": 566,
+    "y": 728,
+    "degree": 0,
+    "width": 270,
+    "height": 20,
+    "fontSize": 10
+  },
+  "location": {
+    "x": 820,
+    "y": 420,
+    "degree": 0,
+    "width": 258,
+    "height": 20
+  }
+}

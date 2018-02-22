@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "请选择组件",
+  "usingComponents": {
+    "widget": "../components/widget"
+  }
+}

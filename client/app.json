@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/postcardTemplates/postcardTemplates",
+    "pages/widgetWorkshop/widgetWorkshop",
+    "pages/blessingWorkshop/blessingWorkshop",
+    "pages/stampWorkshop/stampWorkshop",
+    "pages/postcardDelivery/postcardDelivery",
+    "pages/aboutus/aboutus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "左右滑动选模板",
+    "navigationBarTextStyle": "black"
+  }
+}
